@@ -1,0 +1,69 @@
+<!--<div>
+    <span><a href="{% url 'index' %}">Home</a></span>
+    <span><a href="{% url 'about' %}">About</a></span>
+    <span><a href="{% url 'contact' %}">Contact</a></span>
+</div>
+-->
+<!-- <nav class="navbar navbar-expand navbar-dark bg-dark" aria-label="Second navbar example">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Weerstation</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample02" aria-controls="navbarsExample02" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarsExample02">
+        <ul class="navbar-nav me-auto">
+          <li class="nav-item">
+            <a class="nav-link {% if request.path == index_url %}active{% endif %}" aria-current="page" href="{% url 'index' %}">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link {% if request.path == about_url %}active{% endif %}" href="{% url 'about' %}">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link {% if request.path == contact_url%}active{% endif %}" href="{% url 'contact' %}">Contact</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link Activate" href="https://smeetssimon.github.io/">Blog</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav> -->
+
+  <nav>
+    <div class="container">
+      <header class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom">
+        <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-dark text-decoration-none">
+          <svg class="bi me-2" width="40" height="32"><use xlink:href="#bootstrap"/></svg>
+          <span class="fs-4">Weerstation</span>
+        </a>
+  
+        <ul class="nav nav-pills">
+          <li class="nav-item"><a href="{% url 'index' %}" class="nav-link {% if request.path == index_url %}active{% endif %}" aria-current="page">Home</a></li>
+          <li class="nav-item"><a href="{% url 'about' %}" class="nav-link {% if request.path == index_url %}active{% endif %}">About</a></li>
+          <li class="nav-item"><a href="{% url 'contact' %}" class="nav-link {% if request.path == index_url %}active{% endif %}">Contact</a></li>
+          <li class="nav-item"><a href="https://smeetssimon.github.io/" class="nav-link {% if request.path == index_url %}active{% endif %}">Blog</a></li>
+          <!-- controleren -->
+         
+        </ul>
+      </header>
+    </div>
+  </nav>
+<!-- 
+
+<nav class="navbar navbar-expand-lg bg-secondary text-uppercase fixed-top" id="mainNav">
+    <div class="container">
+        <a class="navbar-brand" href="#page-top">Weerstation</a>
+        <button class="navbar-toggler text-uppercase font-weight-bold bg-primary text-white rounded" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+            Menu
+            <i class="fas fa-bars"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger {% if request.path == index_url %}active{% endif %}" href="{% url 'index' %}">Home</a></li>
+                <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger {% if request.path == about_url %}active{% endif %}" href="{% url 'about' %}">About</a></li>
+                <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger {% if request.path == contact_url %}active{% endif %}" href="{% url 'contact' %}">Contact</a></li>
+            </ul>
+        </div>
+    </div>
+</nav> -->
