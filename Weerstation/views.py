@@ -2,7 +2,10 @@ from django.shortcuts import render
 from django.http import HttpResponse
 
 def index(request):
-    return render(request, "index.html")
+    from weerdata.models import Weerdata
+    objs = Weerdata.objects.all()
+    print("objs", objs)
+    return render(request, "index.html", {"objs": objs})
 
 
 def about(request):
