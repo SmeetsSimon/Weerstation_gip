@@ -40,6 +40,7 @@
   
         <ul class="nav nav-pills">
           <li class="nav-item"><a href="{% url 'index' %}" class="nav-link {% if request.path == index_url %}active{% endif %}" aria-current="page">Home</a></li>
+          <li class="nav-item"><a href="{% url 'dashboard' %}" class="nav-link {% if request.path == index_url %}active{% endif %}" aria-current="page">Dashboard</a></li>
           <li class="nav-item"><a href="{% url 'about' %}" class="nav-link {% if request.path == index_url %}active{% endif %}">About</a></li>
           <li class="nav-item"><a href="{% url 'contact' %}" class="nav-link {% if request.path == index_url %}active{% endif %}">Contact</a></li>
           <li class="nav-item"><a href="https://smeetssimon.github.io/" class="nav-link {% if request.path == index_url %}active{% endif %}">Blog</a></li>
