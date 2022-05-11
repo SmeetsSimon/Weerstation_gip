@@ -9,13 +9,13 @@
         <ul class="nav nav-pills">
           <li class="nav-item"><a href="{% url 'index' %}" class="nav-link {% if request.path == index_url %}active{% endif %}" aria-current="page">Home</a></li>
           <li class="nav-item"><a href="{% url 'dashboard' %}" class="nav-link {% if request.path == index_url %}active{% endif %}" aria-current="page">Dashboard</a></li>
-          <li class="nav-item"><a href="{% url 'about' %}" class="nav-link {% if request.path == index_url %}active{% endif %}">About</a></li>
+          <!-- <li class="nav-item"><a href="{% url 'about' %}" class="nav-link {% if request.path == index_url %}active{% endif %}">About</a></li> -->
           <div class="dropdown">
             <button class="btn btn-secondary dropdown-toggle" href="{% url 'about' %}" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
               about
             </button>
             <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-              <a class="dropdown-item" href="#">Action</a>
+              <a class="dropdown-item" href="{% url 'about' %}" class="nav-link {% if request.path == index_url %}active{% endif %}">about</a>
               <a class="dropdown-item" href="#">Another action</a>
               <a class="dropdown-item" href="#">Something else here</a>
             </div>
