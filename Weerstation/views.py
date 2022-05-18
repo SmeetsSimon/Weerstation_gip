@@ -25,7 +25,7 @@ def contact(request):
             message_name, #subject
             message, #message
             message_email, #from email
-            ['SmSi050804@leerling.mosa-rt.be'], #to Email
+            ['simonsmeets123@gmail.com'], #to Email
         )
 
         return render(request, "contact.html", {'message_name': message_name})
