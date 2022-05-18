@@ -13,11 +13,11 @@ https://docs.djangoproject.com/en/4.0/ref/settings/
 from pathlib import Path
 import os
 from tkinter import PROJECTING 
-# import environ
+#import environ
 
 # Initialise environment variables
-##env = environ.Env()
-##environ.Env.read_env()
+#env = environ.Env()
+#environ.Env.read_env()
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -150,7 +150,7 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 EMAIL_HOST = 'smtp.gmail.com'
 EMAIL_PORT = 587
 EMAIL_HOST_USER = 'simonsmeets123@gmail.com'
-EMAIL_HOST_PASSWORD = '' #'PASSWORD' 
-EMAIL_USE_TLS = False
+EMAIL_HOST_PASSWORD = 'Testgip123' #'PASSWORD' 
+EMAIL_USE_TLS = True
 
 
