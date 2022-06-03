@@ -36,9 +36,11 @@
     <div id="header">
         {% include 'navbar.html' %}
     </div>
-    <div>
-        {% include 'carocel.html' %}
-    </div>
+    {% block carrousel %}
+        <!-- <div>
+            {% include 'carocel.html' %}
+        </div> -->
+    {% endblock %}
     <div id="container" class="container">
     
         
