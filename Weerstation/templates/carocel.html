@@ -13,9 +13,7 @@
         <img src="{% static 'images/achtergrond sensor.png' %}"  width="100%" height="350px" >
           <div class="container">
             <div class="carousel-caption text-end">
-              <h1>Sensor</h1>
-              <p></p>
-              <p><a class="btn btn-lg btn-primary" href="#">Go to</a></p>
+              <p><a class="btn btn-lg btn-primary" href="{% url 'about' %}#sensor">Sensor</a></p>
             </div>
           </div>
       </div>
@@ -23,9 +21,7 @@
         <img src="{% static 'images/Naamloos-1.png  ' %}"  width="100%" height="350px">
           <div class="container">
             <div class="carousel-caption text-end">
-              <h1>LCD</h1>
-              <p></p>
-              <p><a class="btn btn-lg btn-primary" href="#">Go to</a></p>
+              <p><a class="btn btn-lg btn-primary" href="{% url 'about' %}#lcd">LCD</a></p>
             </div>
           </div>
       </div>
@@ -33,15 +29,13 @@
         <img src="{% static 'images/Naamloos-2.png' %}"  width="100%" height="350px">
           <div class="container">
             <div class="carousel-caption text-end">
-              <h1>Datalog</h1>
-              <p></p>
-              <p><a class="btn btn-lg btn-primary" href="#">Go to</a></p>
+              <p><a class="btn btn-lg btn-primary" href="{% url 'about' %}#data-logging">Datalog</a></p>
             </div>
           </div>
       </div>
     </div>
     <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
-      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="carousel-control-prev-icon"  aria-hidden="true"></span>
       <span class="visually-hidden">Previous</span>
     </button>
     <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">

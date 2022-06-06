@@ -2,36 +2,24 @@
 {% load static %}
 {% block title %}Home{% endblock %}
 
-{% block content%}
+{% block foto_navbar %}
+<section class="content-banner">
 
-<!-- <div class="container mt-5">
-    <h1>Contact Me!</h1>
-    <form class="row g-3">
-      <div class="col-md-6">
-        <label for="firstName" class="form-label">First Name</label>
-        <input type="text" class="form-control" id="firstName" required="">
-      </div>
-      <div class="col-md-6">
-        <label for="lastName" class="form-label">Last Name</label>
-        <input type="text" class="form-control" id="lastName" required="">
-      </div>
-      <div class="col-md-8">
-        <label for="emailInfo" class="form-label">E-mail</label>
-        <input type="email" class="form-control" id="emailInfo" required="">
-      </div>
-      <div class="col-md-4">
-        <label for="phoneNumber" class="form-label">Phone Number</label>
-        <input type="text" class="form-control" id="phoneNumber" placeholder="+1 (415) 867-5309">
-      </div>
-      <div class="col-md-12">
-        <label for="comments" class="form-label">Comments, questions?</label>
-        <textarea class="form-control" id="comments" rows="3" required=""></textarea>
-      </div>
-      <div class="col-md-12">
-        <button type="submit" class="btn btn-primary">Submit</button>
-      </div>
-    </form> 
-</div> -->
+  <div class="container">
+<div class="row d-flex justify-content-center">
+  <div class="col-md-12">
+  <div class="banner-con text-center">
+      <p class="first-title">Contact Me</p>
+      <p class="banner-des">Je kan me alles vragen over mijn gip. Je feedback is ook altijd welkom!</p>
+      <a href="https://github.com/SmeetsSimon" target="_blank" class="banner-btn">My Profile </a>
+  </div>
+</div>
+</div>
+</div>
+</section>
+{% endblock %}
+
+{% block content%}
 
 {%  if message_name %}
   <h2> Thank {{ message_name }}!</h2>

@@ -1,29 +1,133 @@
-  <nav>
+{% load static %}
+  <!-- <nav style="background-color: #e3f2fd;">
     <div class="container">
       <header class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom">
         <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-dark text-decoration-none">
-          <svg class="bi me-2" width="40" height="32"><use xlink:href="#bootstrap"/></svg>
           <span class="fs-4">Weerstation</span>
         </a>
+        
   
         <ul class="nav nav-pills">
           <li class="nav-item"><a href="{% url 'index' %}" class="nav-link {% if request.path == index_url %}active{% endif %}" aria-current="page">Home</a></li>
           <li class="nav-item"><a href="{% url 'dashboard' %}" class="nav-link {% if request.path == index_url %}active{% endif %}" aria-current="page">Dashboard</a></li>
-          <!-- <li class="nav-item"><a href="{% url 'about' %}" class="nav-link {% if request.path == index_url %}active{% endif %}">About</a></li> -->
-          <div class="dropdown">
-            <button class="btn btn-secondary dropdown-toggle" href="{% url 'about' %}" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-              about
-            </button>
-            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-              <a class="dropdown-item" href="{% url 'about' %}" class="nav-link {% if request.path == index_url %}active{% endif %}">about</a>
-              <a class="dropdown-item" href="#">Another action</a>
-              <a class="dropdown-item" href="#">Something else here</a>
-            </div>
-          </div>
+          
+          
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="{% url 'about' %}" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              About
+            </a>
+            
+            <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
+              <li><a class="dropdown-item" href="{% url 'about' %}" class="nav-link {% if request.path == index_url %}active{% endif %}">about</a></li>
+              <li><a class="dropdown-item" href="{% url 'about' %}#sensor">Sensor</a></li>
+              <li><a class="dropdown-item" href="{% url 'about' %}#lcd">LCD</a></li>
+              <li><a class="dropdown-item" href="{% url 'about' %}#data-logging">Data Logging</a></li>
+            </ul>
+          </li>
+
           <li class="nav-item"><a href="{% url 'contact' %}" class="nav-link {% if request.path == index_url %}active{% endif %}">Contact</a></li>
           <li class="nav-item"><a href="https://smeetssimon.github.io/" class="nav-link {% if request.path == index_url %}active{% endif %}">Blog</a></li>
                   
         </ul>
+        
       </header>
     </div>
-  </nav>
+  </nav> -->
+
+
+<!-- <nav class="navbar fixed-top bg-light">
+  <div class="container-fluid">
+    <span class="navbar-brand mb-0 h1">Weerstation</span>
+
+    <ul class="nav nav-pills">
+      <li class="nav-item"><a href="{% url 'index' %}" class="nav-link {% if request.path == index_url %}active{% endif %}" aria-current="page">Home</a></li>
+      <li class="nav-item"><a href="{% url 'dashboard' %}" class="nav-link {% if request.path == index_url %}active{% endif %}" aria-current="page">Dashboard</a></li>
+      
+      
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="{% url 'about' %}" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+          About
+        </a>
+        
+        <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
+          <li><a class="dropdown-item" href="{% url 'about' %}" class="nav-link {% if request.path == index_url %}active{% endif %}">about</a></li>
+          <li><a class="dropdown-item" href="{% url 'about' %}#sensor">Sensor</a></li>
+          <li><a class="dropdown-item" href="{% url 'about' %}#lcd">LCD</a></li>
+          <li><a class="dropdown-item" href="{% url 'about' %}#data-logging">Data Logging</a></li>
+        </ul>
+      </li>
+
+      <li class="nav-item"><a href="{% url 'contact' %}" class="nav-link {% if request.path == index_url %}active{% endif %}">Contact</a></li>
+      <li class="nav-item"><a href="https://smeetssimon.github.io/" class="nav-link {% if request.path == index_url %}active{% endif %}">Blog</a></li>
+              
+    </ul>
+  </div>
+</nav> -->
+
+<header class="header">
+  <div class="header-inner">
+    <div class="container-fluid px-lg-5">
+      <nav class="navbar navbar-expand-lg my-navbar">
+  <a class="navbar-brand" href="#"><span class="logo">
+    <img src="{% static 'images/cloud.png' %}" class="img-fluid" style="width:30px; margin:-3px 0px 0px 0px;">Weerstation</span>
+  </a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"><i class="fas fa-bars" style="margin:5px 0px 0px 0px;"></i></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav m-auto">
+      <!-- <li class="nav-item active">
+        <a class="nav-link" href="#">Products<span class="sr-only">(current)</span></a>
+      </li> -->
+      <li class="nav-item">
+        <a class="nav-link" href="{% url 'index' %}">Home</a>
+      </li>
+        <li class="nav-item">
+        <a class="nav-link" href="{% url 'dashboard' %}">Dashboard</a>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          About
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="{% url 'about' %}">About</a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" href="{% url 'about' %}#sensor">Sensor</a>
+          <a class="dropdown-item" href="{% url 'about' %}#lcd">LCD</a>          
+          <a class="dropdown-item" href="{% url 'about' %}#data-logging">Data Logging</a>
+        </div>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="https://smeetssimon.github.io/">Blog</a>
+      </li>
+      
+    </ul>
+    <li class="nav-item my-2 my-lg-0">
+      <a class="header-btn my-2 my-sm-0" href="{% url 'contact' %}">Contact me</a>
+    </li>
+  </div>
+</nav>
+
+    </div>
+  </div>
+
+
+</header>
+<!-- {% block foto_navbar %}
+  <section class="content-banner">
+
+    <div class="container">
+  <div class="row d-flex justify-content-center">
+    <div class="col-md-12">
+      <div class="banner-con text-center">
+        <p class="first-title">vishweb design tutorials &amp; subscribe</p>
+        <p class="banner-des">prototype,design,collaborate and design system all in mockplus</p>
+        <a href="https://www.youtube.com/results?search/query=vishweb+design" target="_blank" class="banner-btn">Get started for free</a>
+      </div>
+  </div>
+  </div>
+  </div>
+  </section>
+{% endblock %} -->
+
