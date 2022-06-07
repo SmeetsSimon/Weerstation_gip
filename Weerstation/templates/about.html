@@ -106,8 +106,24 @@
         </div>
     </div>
 </div>
-
-<div class="container">
+<div class="accordion accordion-flush" id="accordionFlushExample">
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="flush-headingOne">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+            Website
+        </button>
+      </h2>
+      <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+        <div class="accordion-body">Mijn website is een belangrijk deel van mijn gip. Ik moest in plaats van een bundel een website maken en daar bovenop moet ik ook nog een grafische weergave tonen
+            van de sensor zijn gegevens. Ik had hier kunnen kiezen tussen html en Django en ik heb voor Django gekozen. Die keuze had ik gemaakt met in gedachten een database te maken 
+            met via Django want dat ging niet met gewoon Html. <br>
+            Later ben ik er dan achter gekomen wat ThingSpeak was en had ik ook nog de keuze om opnieuw te beginnen met html. Dit was toen ik al ver was met mijn website op Django maar ik
+            botste telkens tegen nieuwe problemen, omdat Django uitgebreider en moeilijker is dan Html. Ik ben toch verder gegaan met Django omdat het me na een half jaar ermee te werken wel beviel.
+            Nu uiteindelijk heb ik wel gebruik gemaakt van Django met mijn <a href="{% url 'contact' %}" class="text-decoration-none">Contact</a> pagina.</div>
+      </div>
+    </div>
+</div>
+<!-- <div class="container">
     <div class="row">
         <div class="col-md-12"><h2>Website</h2></div>
         <div>
@@ -121,27 +137,30 @@
             </p>
         </div>
     </div>
-</div>
+</div> -->
 </br>
-<div class="container mt-5">
-    <div class="row">
-      <div class="col-sm-4">
-        <h3>Johan Colson</h3>
-        <p> Graag wil ik mijn Klasleerkracht bedanken.</p>
-        <p>Voor alle problemen die hij met mij heeft opgelost.</p>
+
+<div class="card-group mt-5">
+    <div class="card">
+      <div class="card-body">
+        <h5 class="card-title">Johan Colson</h5>
+        <p class="card-text">Graag wil ik mijn Klasleerkracht bedanken oor alle problemen die hij met mij heeft opgelost. </p>
       </div>
-      <div class="col-sm-4">
-        <h3>Takis Issaris</h3>
-        <p>Graag wil ik ook mijn oude leerkracht voor Programmeren bedanken.</p>
-        <p>Voor mij te introduceren aan Django en voor mij daarmee verder te helpen.</p>
+    </div>
+    <div class="card">
+      <div class="card-body">
+        <h5 class="card-title">Takis Issaris</h5>
+        <p class="card-text">Graag wil ik ook mijn oude leerkracht voor Programmeren bedanken voor mij te introduceren aan Django en voor mij daarmee verder te helpen.</p>
       </div>
-      <div class="col-sm-4">
-        <h3>Hendrik Clijsters</h3>        
-        <p>En als laatste wil ik ook graag mijn huidige leerkracht van Programmeren bedanken.</p>
-        <p>Voor mij verder te helpen aan mijn website.</p>
+    </div>
+    <div class="card">
+      <div class="card-body">
+        <h5 class="card-title">Hendrik Clijsters</h5>
+        <p class="card-text">En als laatste wil ik ook graag mijn huidige leerkracht van Programmeren bedanken.En als laatste wil ik ook graag mijn huidige leerkracht van Programmeren bedanken voor mij verder te helpen aan mijn website.</p>
       </div>
     </div>
   </div>
+
   
 
 
