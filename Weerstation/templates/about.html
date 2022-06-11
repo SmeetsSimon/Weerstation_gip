@@ -25,8 +25,8 @@
 <div class="container">
     <div class="row">
         <div class="col-md-12"><h2>Gip samenvatting</h2></div>
-        <div class="col-6"><p>Ik heb een weerstation gemaakt die de temperatuur, luchtvochtigheid en de luchtdruk kan meten met een sensor
-            deze sensor laat daarna alle gegevens zien op een lcd scherm. Voor dit te programmeren heb ik een Raspberry pi gebruikt. En als laatste moeten de gegevens live 
+        <div class="col-6"><p>Ik heb een weerstation gemaakt dat de temperatuur, luchtvochtigheid en de luchtdruk kan meten met een sensor
+            Deze sensor laat daarna alle gegevens zien op een lcd-scherm. Om dit te programmeren heb ik een Raspberry pi gebruikt. En als laatste moeten de gegevens live 
             te zien zijn op mijn website.
         </p></div>
     </div>
@@ -36,17 +36,17 @@
     <div class="row">
         <div class="col-md-12"><h2 id="sensor">Sensor <a class="anchor-link" href="{% url 'about' %}#sensor" aria-label="Link to this section: Sensor"></a></h2></div>
         <div class="col-8">
-            <p>Ik heb de BME280 sensor van Adafruit gebruikt. Met deze sensor kan je zeer nauwkeurig de temperatuur, luchtdruk en luchtvochtigheid.<br>Er zijn 2 verschillende soorten aansluiten, ik maak gebruik van i2c dat heb ik gedaan omdat de LCD
-                die ik gebruik hier ook mee werkt. Bij i2c maak je gebruik van 4 aansluitpinnen: Vin, GND, SCK en SDI. De Vin en GND zijn vanzelfsprekend maar de SCK en de SDI waren voor mij nieuw.
-                SCK staat voor 'SPI Clock Pin' dit is de input naar de chip en word aangesloten op de SCL pin. SDI staat voor 'Serial Data In' via deze pin verzend de processor data naar de BME280 en word 
-                aangesloten op de SDA pin. Zie hier de code die ik heb geschreven voor de <a href="https://github.com/SmeetsSimon/Weerstation_RaspberryPi/blob/master/sensor3.7.py" class="text-decoration-none">Sensor</a>. 
+            <p>Ik heb de BME280 sensor van Adafruit gebruikt. Met deze sensor kan je zeer nauwkeurig de temperatuur, luchtdruk en luchtvochtigheid meten.<br>Er zijn 2 verschillende soorten aansluitingen. Ik maak gebruik van i2c omdat de LCD
+                die ik gebruik hier ook mee werkt. Bij i2c maak je gebruik van 4 aansluitpinnen: Vin, GND, SCK en SDI.Vin en GND zijn vanzelfsprekend. SCK en de SDI waren voor mij nieuw.
+                SCK staat voor 'SPI Clock Pin', dit is de input naar de chip en wordt aangesloten op de SCL pin. SDI staat voor 'Serial Data In', via deze pin verzendt de processor data naar de BME280 en word 
+                aangesloten op de SDA pin. Zie hier de code die ik heb geschreven voor de <a href="https://github.com/SmeetsSimon/Weerstation_RaspberryPi/blob/master/sensor3.7.py" class="text-decoration-none">sensor</a>. 
     
             </p>
             
         </div>
         <div class="col-4"><img src="{% static 'images/sensor.jpg' %}" class="w-75 h-100" alt="BME280"></div>
 
-        <div class="col-6"><H3>Hier kun je zien hoe de BME280 aan de Raspberry Pi is aangesloten</H3></div>
+        <div class="col-6"><H3>Hier kan je zien hoe de BME280 aan de Raspberry Pi is aangesloten</H3></div>
         <div class="col-6"><img src="{% static 'images/Afbeelding1.png' %}" class="img-fluid float-end" alt="Aansluiting van sensor op Raspberry Pi"></div>
     </div>
 </div>
@@ -57,11 +57,11 @@
         <div class="col-md-12"><h2 id="lcd">LCD <a class="anchor-link" href="{% url 'about' %}#lcd" aria-label="Link to this section: LCD"></a></h2></div>
         <div class="col-md-12">
             <p>Ik gebruik een 20X4 LCD van JOY-IT. De LCD heeft een I2D communicatie-adapter er achterop gesoldeerd. Dat is handig want het heeft de zelfde werking als bij de sensor.
-                4 pinnen: GND, VCC, SDA en SCL. De SCL komt overeen met de SDA die we terug hebben gezien op de sensor. De SCL is hetzelfde als de SCK. 
-                Zie hier de code die ik heb geschreven voor de  <a href="https://github.com/SmeetsSimon/Weerstation_RaspberryPi/blob/master/LCD3.7.py" class="text-decoration-none">LCD</a>.
+                4 pinnen: GND, VCC, SDA en SCL. De SCL komt overeen met de SDA dieje terug hebt gezien op de sensor. De SCL is hetzelfde als de SCK. 
+                Zie hier de code die ik heb geschreven voor de <a href="https://github.com/SmeetsSimon/Weerstation_RaspberryPi/blob/master/LCD3.7.py" class="text-decoration-none">LCD</a>.
             </p>
         </div>
-        <div class="col-6"><H3>Hier kun je zien hoe de LCD aan de Raspberry Pi is aangesloten.</H3></div>
+        <div class="col-6"><H3>Hier kan je zien hoe de LCD aan de Raspberry Pi is aangesloten.</H3></div>
         <div class="col-6"><img src="{% static 'images/Afbeelding2.png' %}" class="img-fluid float-end" alt="LCD"></div>
 
     </div>
@@ -71,9 +71,9 @@
     <div class="row">
         <div class="col-md-12"><h2>Raspberry Pi</h2></div>
         <div class="col-md-12">
-            <p>Voor de programmeren heb ik gekozen voor een Raspberry Pi. Een Raspberry Pi is een microcontroller je kan het vergelijken met een kleine pc.
-                je programmeerd hier gewoon met python op daarom dat ik ervoor heb gekozen in plaats van een Arduino die programmeerd met C++.
-                <br>Als je intresse hebt in de code die ik heb gemaakt kun je ze zien allemaal zien op mijn <a href="https://github.com/SmeetsSimon/Weerstation_RaspberryPi" class="text-decoration-none">Github </a>pagina.
+            <p>Voor het programmeren heb ik gekozen voor een Raspberry Pi. Een Raspberry Pi is een microcontroller. Je kan het vergelijken met een kleine pc.
+                Je programmeert hier gewoon met python op daarom heb ik hiervoor gekozen in plaats van een Arduino die je programmeert met C++.
+                <br>Als je interesse hebt in de code die ik heb gemaakt, kan je deze bekijken op mijn <a href="https://github.com/SmeetsSimon/Weerstation_RaspberryPi" class="text-decoration-none">Github </a>pagina.
             </p>
             <div class="col-6"><img src="{% static 'images/raspberry-pi.png' %}" class="img-fluid float-end" alt="raspberry-pi"></div>
         </div>
@@ -84,8 +84,8 @@
     <div class="row">
         <div class="col-md-12"><h2>Opbouwen gip</h2></div>
         <div class="col-md-12">
-            <p>Voor het visueel aantrekkelijk te maken heb ik een doosje laten maken waar ik mijn Raspberry Pi, Sensor en LCD heb ik zitten.
-                het doosje is gemaakt van hout dat ik heb laten lazeren op school.
+            <p>Om het visueel aantrekkelijk te maken, heb ik een doosje laten maken waarin ik mijn Raspberry Pi, Sensor en LCD heb zitten.
+                het doosje is gemaakt van hout dat ik heb laten laseren op school.
             </p>
         </div>
     </div>
@@ -95,12 +95,12 @@
     <div class="row">
         <div class="col-md-12"><h2 id="data-logging">Data logging <a class="anchor-link" href="{% url 'about' %}#data-logging" aria-label="Link to this section: Data Logging"></a></h2></div>
         <div class="col-md-12">
-            <p> De opdracht was om de gegevens te laten tonen op een LCD maar ook op een website. Dit kan je zien in mijn <a href="{% url 'dashboard' %}" class="text-decoration-none">Dashboard </a>pagina.
-                Voor dit te doen had ik speciaal gekozen voor Django maar dat ging me veel te veel tijd kosten om te doen en dan zou ik mijn website nooit afkrijgen.
+            <p> De opdracht was om de gegevens te laten tonen op een LCD maar ook op een website. Dit kan je zien op mijn <a href="{% url 'dashboard' %}" class="text-decoration-none">Dashboard</a> pagina.
+                Om dit te doen had ik speciaal gekozen voor Django maar dat ging me veel te veel tijd kosten en dan zou ik mijn website nooit afkrijgen.
                 Daarom heb ik gekozen voor ThingSpeak.<br>
-                ThingSpeak is een service waarmee je live gegevensstromen in de cloud kunt samenvoegen, visualiseren en analyseren. Voor dat ik dit ging toevoegen aan mijn code moest ik het eerst zo eens testen ik heb dat gedaan met deze
+                ThingSpeak is een service waarmee je live gegevensstromen in de cloud kan samenvoegen, visualiseren en analyseren. Voordat ik dit heb toegevoegd aan mijn code moest ik het eerst zo eens testen ik heb dat gedaan met deze
                 <a href="https://github.com/SmeetsSimon/Weerstation_RaspberryPi/blob/master/test_thingspeak.py" class="text-decoration-none">code</a>. Als ik mijn programma ging laten draaien stuurde die de gegevens van de sensor door naar de cloud van ThingSpeak.
-                Dan kun je live de gegevens zien binnenkomen op ThingSpeak. Daarna had ik de grafieken die ik had gemaakt op mijn website gezet waardoor je ze ook live kunt zien op mijn website.
+                Dan kan je live de gegevens zien binnenkomen op ThingSpeak. Daarna heb ik de grafieken die ik heb gemaakt op mijn website gezet waardoor je ze ook live kan zien op mijn website.
                 <br> Wat je ook kan doen is alle binne komende gegevens in een .csv bestand toevoegen <a href="https://github.com/SmeetsSimon/Weerstation_RaspberryPi/blob/master/temp.csv" class="text-decoration-none">Zie hier </a>. Altijd is je het programma gaat uitvoeren worden alle gegevens hierin 
                 toegevoegd. uiteindelijk kan je hiervan grafieken maken in excel
                 <div class="col-6"><img src="{% static 'images/Data_gip_simon.png' %}" class="img-fluid float-end" alt="raspberry-pi"></div> 
@@ -147,19 +147,19 @@
     <div class="card">
       <div class="card-body">
         <h5 class="card-title">Johan Colson</h5>
-        <p class="card-text">Graag wil ik mijn Klasleerkracht bedanken oor alle problemen die hij met mij heeft opgelost. </p>
+        <p class="card-text">Graag wil ik mijn klasleerkracht bedanken bij de hulp van alle problemen. hij heeft vaak samen met mij oplosssingen gezocht. </p>
       </div>
     </div>
     <div class="card">
       <div class="card-body">
         <h5 class="card-title">Takis Issaris</h5>
-        <p class="card-text">Graag wil ik ook mijn oude leerkracht voor Programmeren bedanken voor mij te introduceren aan Django en voor mij daarmee verder te helpen.</p>
+        <p class="card-text">Graag wil ik ook mijn vorige leerkracht voor programmeren bedanken om mij te introduceren met Django en mij hiermee verder te helpen.</p>
       </div>
     </div>
     <div class="card">
       <div class="card-body">
         <h5 class="card-title">Hendrik Clijsters</h5>
-        <p class="card-text">En als laatste wil ik ook graag mijn huidige leerkracht van Programmeren bedanken.En als laatste wil ik ook graag mijn huidige leerkracht van Programmeren bedanken voor mij verder te helpen aan mijn website.</p>
+        <p class="card-text">En als laatste wil ik ook graag mijn huidige leerkracht voor programmeren bedanken. Om mij verder te helpen met mijn website.</p>
       </div>
     </div>
   </div>

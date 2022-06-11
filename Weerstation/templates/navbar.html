@@ -1,69 +1,4 @@
 {% load static %}
-  <!-- <nav style="background-color: #e3f2fd;">
-    <div class="container">
-      <header class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom">
-        <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-dark text-decoration-none">
-          <span class="fs-4">Weerstation</span>
-        </a>
-        
-  
-        <ul class="nav nav-pills">
-          <li class="nav-item"><a href="{% url 'index' %}" class="nav-link {% if request.path == index_url %}active{% endif %}" aria-current="page">Home</a></li>
-          <li class="nav-item"><a href="{% url 'dashboard' %}" class="nav-link {% if request.path == index_url %}active{% endif %}" aria-current="page">Dashboard</a></li>
-          
-          
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="{% url 'about' %}" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-              About
-            </a>
-            
-            <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
-              <li><a class="dropdown-item" href="{% url 'about' %}" class="nav-link {% if request.path == index_url %}active{% endif %}">about</a></li>
-              <li><a class="dropdown-item" href="{% url 'about' %}#sensor">Sensor</a></li>
-              <li><a class="dropdown-item" href="{% url 'about' %}#lcd">LCD</a></li>
-              <li><a class="dropdown-item" href="{% url 'about' %}#data-logging">Data Logging</a></li>
-            </ul>
-          </li>
-
-          <li class="nav-item"><a href="{% url 'contact' %}" class="nav-link {% if request.path == index_url %}active{% endif %}">Contact</a></li>
-          <li class="nav-item"><a href="https://smeetssimon.github.io/" class="nav-link {% if request.path == index_url %}active{% endif %}">Blog</a></li>
-                  
-        </ul>
-        
-      </header>
-    </div>
-  </nav> -->
-
-
-<!-- <nav class="navbar fixed-top bg-light">
-  <div class="container-fluid">
-    <span class="navbar-brand mb-0 h1">Weerstation</span>
-
-    <ul class="nav nav-pills">
-      <li class="nav-item"><a href="{% url 'index' %}" class="nav-link {% if request.path == index_url %}active{% endif %}" aria-current="page">Home</a></li>
-      <li class="nav-item"><a href="{% url 'dashboard' %}" class="nav-link {% if request.path == index_url %}active{% endif %}" aria-current="page">Dashboard</a></li>
-      
-      
-      <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle" href="{% url 'about' %}" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-          About
-        </a>
-        
-        <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
-          <li><a class="dropdown-item" href="{% url 'about' %}" class="nav-link {% if request.path == index_url %}active{% endif %}">about</a></li>
-          <li><a class="dropdown-item" href="{% url 'about' %}#sensor">Sensor</a></li>
-          <li><a class="dropdown-item" href="{% url 'about' %}#lcd">LCD</a></li>
-          <li><a class="dropdown-item" href="{% url 'about' %}#data-logging">Data Logging</a></li>
-        </ul>
-      </li>
-
-      <li class="nav-item"><a href="{% url 'contact' %}" class="nav-link {% if request.path == index_url %}active{% endif %}">Contact</a></li>
-      <li class="nav-item"><a href="https://smeetssimon.github.io/" class="nav-link {% if request.path == index_url %}active{% endif %}">Blog</a></li>
-              
-    </ul>
-  </div>
-</nav> -->
-
 <header class="header">
   <div class="header-inner">
     <div class="container-fluid px-lg-5">
@@ -77,9 +12,6 @@
 
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
     <ul class="navbar-nav m-auto">
-      <!-- <li class="nav-item active">
-        <a class="nav-link" href="#">Products<span class="sr-only">(current)</span></a>
-      </li> -->
       <li class="nav-item">
         <a class="nav-link" href="{% url 'index' %}">Home</a>
       </li>
@@ -114,20 +46,4 @@
 
 
 </header>
-<!-- {% block foto_navbar %}
-  <section class="content-banner">
-
-    <div class="container">
-  <div class="row d-flex justify-content-center">
-    <div class="col-md-12">
-      <div class="banner-con text-center">
-        <p class="first-title">vishweb design tutorials &amp; subscribe</p>
-        <p class="banner-des">prototype,design,collaborate and design system all in mockplus</p>
-        <a href="https://www.youtube.com/results?search/query=vishweb+design" target="_blank" class="banner-btn">Get started for free</a>
-      </div>
-  </div>
-  </div>
-  </div>
-  </section>
-{% endblock %} -->
 
